@@ -60,7 +60,7 @@ while True:
 
             # Send POST request if name is "Unknown"
             if name == 'Unknown':
-             	r = requests.get('http://207.151.56.232:8000/camera/', 'lol')
+             	r = requests.get('http://192.168.0.101:8000/camera/', 'lol')
 
             face_names.append(name)
 
