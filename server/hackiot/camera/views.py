@@ -2,6 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("You should see a live video feed here?")
+    return(HttpResponse("MEOW burtis"))
 
 # Create your views here.

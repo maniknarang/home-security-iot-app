@@ -25,7 +25,7 @@ SECRET_KEY = '=aw++xmlrs$+c@+rrkrl(m)n$7!(ijoify_8(=vcv$_n0f2qk@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'camera.apps.CameraConfig',
 ]
 
 MIDDLEWARE = [
