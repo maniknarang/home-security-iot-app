@@ -1,6 +1,7 @@
 import face_recognition
 import cv2
 import os
+import requests
 
 # Get a reference to webcam
 video_capture = cv2.VideoCapture(0)
@@ -50,12 +51,16 @@ while True:
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
-            name = "Who in the name of fuck"
+            name = "Unknown"
 
             # If a match was found in known_face_encodings, just use the first one.
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
+
+            # Send POST request if name is "Unknown"
+            if name == 'Unknown':
+             	r = requests.get('http://192.168.0.101:8000/camera/', 'lol')
 
             face_names.append(name)
 
