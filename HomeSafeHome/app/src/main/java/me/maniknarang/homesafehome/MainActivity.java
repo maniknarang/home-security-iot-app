@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
         webview.getSettings().setPluginState(WebSettings.PluginState.ON);
         webview.getSettings().setMediaPlaybackRequiresUserGesture(false);
         webview.setWebChromeClient(new WebChromeClient());
-        webview.loadUrl("http://10.120.3.154:8090/camera.mjpeg");
+        webview.loadUrl("http://192.168.0.103:8090/camera.mjpeg");
     }
 }
