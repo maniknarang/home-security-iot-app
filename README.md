@@ -4,7 +4,7 @@ Using fast, highly secure IoT technology to making sure our residence is safe at
 More in-depth details on <b>https://devpost.com/software/homesafehome</b>.
 
 <p align="center">
-  <img src="assets/img/hackiot.jpg" width="350"/>
+  <img src="assets/img/HackIoT.jpg" />
 </p>
 
 Contributors:
