@@ -58,7 +58,7 @@ while True:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
 
-            # Send POST request if name is "Unknown"
+            # Send GET request if name is "Unknown"
             if name == 'Unknown':
              	r = requests.get('http://192.168.0.101:8000/camera/', 'lol')
 
